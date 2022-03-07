@@ -157,7 +157,7 @@ bool testar_Solucao(){
 		return true;
 	}
     for(int i = 0; i< colunas; i++){
-        if(tabela[numero_Restricoes][i] < 0){
+        if(tabela[numero_Restricoes][i] < 0){//se existe numero negativo na ultima linha ela n�o � solu��o otima
             printf("\nA solucao ainda nao e a otima.\n");
             return false;
         }
@@ -187,6 +187,7 @@ void testar_Multi(){
 						count_Multi = 1;
 					} 	 
 				}
+				
 			}
 		}
 } 
