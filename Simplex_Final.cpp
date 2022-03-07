@@ -65,7 +65,6 @@ setlocale(LC_ALL, "portuguese");
 }
 
 void escolher_Entrada(){
-    //inicializando as variaveis usadas na fun√ß√£o
     linha_Menor = 0;
     coluna_Pivo = 0;
     entrada = INT_MAX;
@@ -100,12 +99,12 @@ void escolher_Pivo(){
 }
 
 void gerarNovas_Linhas(){
-    int ref = 0;//o ref È o indice da linha 0, 1, 2 . . .
-    while(ref < linhas){//enquanto ref for menor que as linhas o while sera repetido e incrementa o ref
+    int ref = 0;
+    while(ref < linhas){
         if(ref != linha_Pivo){
             printf("\nNova linha %.0d: \n", ref);
 
-            double ref_Linha[colunas], inv = tabela[ref][coluna_Pivo] * -1;//inve È o inverso do elemento da coluna pivo
+            double ref_Linha[colunas], inv = tabela[ref][coluna_Pivo] * -1;
             	//gerando a nova linha
 				for(int i = 0; i < colunas; i++){
                     ref_Linha[i] = tabela[linha_Pivo][i] * inv;
@@ -137,7 +136,7 @@ void simplex(){
     escolher_Pivo();
 
     gerarLinha_Pivo();
-	//exibe a tabela gerada pÛs a funÁ„o de gerar novas linhas
+	//exibe a tabela gerada pÔøΩs a funÔøΩÔøΩo de gerar novas linhas
     printf("\n\nNova tabela: \n");
     for(int i = 0; i < linhas; i++){
         printf("\n");
@@ -158,7 +157,7 @@ bool testar_Solucao(){
 		return true;
 	}
     for(int i = 0; i< colunas; i++){
-        if(tabela[numero_Restricoes][i] < 0){//se existe numero negativo na ultima linha ela n„o È soluÁ„o otima
+        if(tabela[numero_Restricoes][i] < 0){
             printf("\nA solucao ainda nao e a otima.\n");
             return false;
         }
@@ -188,7 +187,6 @@ void testar_Multi(){
 						count_Multi = 1;
 					} 	 
 				}
-				
 			}
 		}
 } 
