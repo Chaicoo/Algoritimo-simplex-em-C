@@ -32,7 +32,7 @@
     <img height="320em" src="https://github.com/Chaicoo/Algoritimo-simplex-em-C/blob/main/img/metodo-simplex.jpeg"/>
   </div>
 - Função testar_Solucao():
-  <p>A funçao irá percorrer a linha da Função Objetivo, caso exista algum número negativo nela, a funçao irá definir que ela a solução ainda não é otima, e irá reiniciar o méto a partir da tabela atual. A função irá fazer a chamada da função testar_Ilimitado, pois caso o PPL seja ilimitado na main não será testado se a solução é otima ou não, pois ela é ilimitada./p>
+  <p align="justify">A funçao irá percorrer a linha da Função Objetivo, caso exista algum número negativo nela, a funçao irá definir que ela a solução ainda não é otima, e irá reiniciar o méto a partir da tabela atual. A função irá fazer a chamada da função testar_Ilimitado, pois caso o PPL seja ilimitado na main não será testado se a solução é otima ou não, pois ela é ilimitada./p>
   <div align="center">
     <img height="320em" src="https://github.com/Chaicoo/Algoritimo-simplex-em-C/blob/main/img/testar-solucao.jpeg"/>
   </div>
